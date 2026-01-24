@@ -5,7 +5,8 @@ import profile_img from '../../assets/about_profile.svg'
 
 const About = () => {
   return (
-    <div className="about">
+    /* 1. Yahan id='about' zaroor check karna, isi se click kaam karega */
+    <div id='about' className="about">
       <div className="about-title">
         <h1>About me</h1>
         <img src={theme_pattern} alt="" />
@@ -13,36 +14,41 @@ const About = () => {
 
       <div className="about-sections">
         <div className="about-left">
-          <img src={profile_img} alt="" />
+          <img src={profile_img} alt="Harsh Kumar Jaiswal" />
         </div>
         <div className="about-right">
           <div className="about-para">
-            <p>Hi, I’m Harsh 👋 — a frontend and backend developer who loves turning ideas into real web applications. On the frontend, I enjoy building clean, modern, and responsive designs with React, HTML, CSS, and JavaScript. On the backend, I work with Node.js, Express, and databases like MongoDB/MySQL to create fast and reliable systems. I’m always excited to learn new tech, explore creative solutions, and take on projects that challenge me to grow as a developer.</p>
+            {/* 2. Updated Intro */}
+            <p>I am Harsh Kumar Jaiswal, a final-year B.Tech CSE student at Kashi Institute of Technology. I am a passionate problem solver and full-stack developer specializing in Java, Spring Boot, and React.js.</p>
             
+            {/* 3. Competitive Programming Focus */}
+            <p>As a 4-star coder on CodeChef, I have solved over 900+ coding problems. I have also completed virtual job simulations with JPMorgan Chase and AWS, and I am an Oracle Certified AI Foundations Associate.</p>
           </div>
+          
           <div className="about-skills">
-            <div className="about-skill"><p>HTML & CSS</p><hr style={{ width: "50%" }} /></div>
-            <div className="about-skill"><p> React JS</p><hr style={{ width: "70%" }} /></div>
-            <div className="about-skill"><p>JavaScript</p><hr style={{ width: "60%" }} /></div>
-            <div className="about-skill"><p>Next JS</p><hr style={{ width: "50%" }} /></div>
+            <div className="about-skill"><p>Java & Spring Boot</p><hr style={{ width: "85%" }} /></div>
+            <div className="about-skill"><p>Data Structures (C++)</p><hr style={{ width: "95%" }} /></div>
+            <div className="about-skill"><p>React JS</p><hr style={{ width: "75%" }} /></div>
+            <div className="about-skill"><p>JavaScript</p><hr style={{ width: "70%" }} /></div>
           </div>
         </div>
       </div>
 
       <div className="about-achievements">
         <div className="about-achievement">
-          <h1>5+</h1>
-          <p>YEARS OF EXPERIENCE</p>
+          {/* 4. Updated to 4-Star */}
+          <h1>4★</h1>
+          <p>CODECHEF RATING</p>
         </div>
         <hr />
         <div className="about-achievement">
-          <h1>90+</h1>
-          <p>PROJECTS COMPLETED</p>
+          <h1>900+</h1>
+          <p>PROBLEMS SOLVED</p>
         </div>
         <hr />
         <div className="about-achievement">
-          <h1>15+</h1>
-          <p>HAPPY CLIENTS</p>
+          <h1>2+</h1>
+          <p>JOB SIMULATIONS</p>
         </div>
       </div>
     </div>

@@ -1,0 +1,18 @@
+.services-format a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+.services-format a:hover {
+    transform: translateX(10px);
+    color: #DF8908 !important; /* Hover par rang badlega */
+}
+
+/* Isse certificates mobile par bhi sahi dikhenge */
+@media (max-width: 768px) {
+    .services-format h2 {
+        font-size: 20px;
+    }
+}

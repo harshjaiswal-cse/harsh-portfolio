@@ -3,8 +3,10 @@ import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import About from './Components/About/About'
 import Services from './Components/Services/Services'
+import Certificates from './Components/Certificates/Certificates' // Naya import
 import MyWork from './Components/MyWork/MyWork'
 import Contact from './Components/Contact/Contact'
+import Footer from './Components/Footer/Footer' // Footer bhi add kar diya
 
 const App = () => {
   return (
@@ -13,9 +15,10 @@ const App = () => {
       <Hero/>
       <About/>
       <Services/>
+      <Certificates/> 
       <MyWork/>
       <Contact/>
-      
+      <Footer/>
     </div>
   )
 }

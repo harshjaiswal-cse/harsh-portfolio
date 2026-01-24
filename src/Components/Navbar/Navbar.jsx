@@ -1,21 +1,23 @@
 import React from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.svg'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 const Navbar = () => {
   return (
     <div className='navbar'>
-        <img src={logo} alt="" />
+      <img src={logo} alt="Harsh Logo" />
       <ul className="nav-menu">
-        <li>Home</li>
-         <li>About Me</li>
-          <li>Services</li>
-           
-            <li>Portfolio</li>
-            <li>Contact</li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#home'><p>Home</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#about'><p>About Me</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#services'><p>Services</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#portfolio'><p>Portfolio</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p>Contact</p></AnchorLink></li>
       </ul>
-      <div className="nav-connect">Connect With Me</div>
+      <div className="nav-connect">
+        <AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink>
+      </div>
     </div>
   )
 }
-
 export default Navbar
