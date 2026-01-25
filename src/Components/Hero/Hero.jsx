@@ -31,7 +31,7 @@ const Hero = () => {
         </div>
         <div className="hero-resume">
           {/* Tumhara asali resume link connect kar diya hai */}
-          <a href="https://drive.google.com/file/d/1T3FAi75dlo-YAhyurHmTaPMpjdG9evNB/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'white'}}>
+          <a href="https://drive.google.com/file/d/1Nf95YPpc2K7SrqBcmN1hYUWTVCYnwNXt/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'white'}}>
             My resume
           </a>
         </div>
